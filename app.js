@@ -515,11 +515,570 @@
 //     else if(temp >= 10) {
 //         document.write("OMG! Today’s weather is so Cool")
 //     }
+// 1. Write a program that takes two user inputs for first and
+// last name using prompt and merge them in a new variable
+// titled fullName. Greet the user using his full name.
 
-11. Write a program to create a calculator for +,-,*, / & %
-using if statements. Take the following input:
-a. First number
-b. Second number
-c. Operation (+, -, *, /, %)
-Compute & show the calculated result to user.
+// firstName = prompt("Enter your First Name:")
+// lastName = prompt("Enter your Last Name:")
+// alert("Welcome "+firstName +" " + lastName)
+
+// 2. Write a program to take a user input about his favorite
+// mobile phone model. Find and display the length of user
+// input in your browser
+
+// a = prompt("Enter your favourite Mobile Brand:")
+
+// document.write("My Favourite Phone is: " + a )
+
+// document.write("</br>Length of String: " + a.length)
+
+// 3. Write a program to find the index of letter “n” in the word
+// “Pakistani” and display the result in your browser .
+// var Name = "Pakistani"
+// document.write("String: " + Name + "</br>")
+
+// for (let i = 0; i < Name.length; i++) {
+//     if(Name[i] == "n"){
+//         document.write("Index of 'n' : "+i)
+//     }
+
+// }
+
+// 4. Write a program to find the last index of letter “l” in the
+// word “Hello World” and display the result in your browser.
+// var a = "Hello World"
+// document.write("String: " + a)
+// document.write("</br>Last index of 'l' : " + a.lastIndexOf("l"))
+
+// 5. Write a program to find the character at 3rd index in the
+// word “Pakistani” and display the result in your browser.
+//  var a = "Pakistani"
+//  document.write("Srting: " + a)
+//  document.write("</br>Character at index '3' : " + a[3])
+
+// 6. Repeat Q1 using string concat() method.
+// firstName = prompt("Enter your First Name:")
+// lastName = prompt("Enter your Last Name:")
+// alert("Welcome "+firstName.concat(lastName))
+
+// 7.Write a program to replace the “Hyder” to “Islam” in the
+// word “Hyderabad” and display the result in your browser.
+// var a = "Hyderabad"
+// document.write("City : " + a)
+// a = a.replace("Hyder", "Islam");
+// document.write("</br>After replacement: " + a)
+
+// 8. Write a program to replace all occurrences of “and” in the
+// string with “&” and display the result in your browser.
+// var message = "Ali and Sami are best friends. They play cricket and football together."
+// message = message.replace(/and/g , "&")
+// document.write(message)
+
+// 9. Write a program that converts a string “472” to a number
+// 472. Display the values & types in your browser.
+
+// var num = "472"
+// document.write("Value: " + num + "</br>"+"Type : " + typeof(num))
+// var num2 = Number(num)
+// document.write("</br>Value: " + num2 + "</br>"+"Type : " +typeof(num2))
+
+// 10. Write a program that takes user input. Convert and
+// show the input in capital letters.
+// a = prompt("Enter any String: ")
+// document.write("User input: " + a + "</br>Upper case: " + a.toUpperCase())
+
+// 11. Write a program that takes user input. Convert and
+// show the input in title case.
+//  a = prompt("Enter any String: ")
+//  document.write("User input: " + a + "</br>Title case: " + a.charAt(0).toUpperCase() + a.substr(1).toLowerCase())
+
+// 12. Write a program that converts the variable num to
+// string.
+// var num = 35.36 ;
+// Remove the dot to display “3536” display in your browser.
+
+// var a = 35.36
+// a = String(a)
+// document.write("Number: " + a)
+// a = parseInt(a)
+// document.write("</br>Result: " + a)
+
+// 13. Write a program to take user input and store username
+// in a variable. If the username contains any special symbol
+// among [@ . , !], prompt the user to enter a valid username.
+
+// var userName = prompt("Enter a Username: ")
+// for (var i = 0; i < userName.length; i++) {
+//     if (userName[i] == "!" || userName[i] == "," || userName[i] == "." || userName[i] == "@" ) {
+//         alert("Please Enter a Correct usename!!!")
+
+//     }
+
+// }
+
+// 14. You have an array
+// A = [cake”, “apple pie”, “cookie”, “chips”, “patties”]
+// Write a program to enable “search by user input” in an
+// array. After searching, prompt the user whether the given
+// item is found in the list or not.
+// Note: Perform case insensitive search. Whether the user
+// enters cookie, Cookie, COOKIE or coOkIE, program
+// should inform about its availability.
+
+// var items = ["cake", "apple pie", "cookie", "chips", "patties"]
+// var customerDemand = prompt("Welcome to the pearl Bakery!!! What would you like to have?")
+// customerDemand = customerDemand.toLowerCase()
+// for (var i=0; i < items.length; i++) {
+//     if (items[i] === customerDemand) {
+//         alert ("found")
+//     }
+// }
+
+// 15. Write a program to take password as an input from
+// user. The password must qualify these requirements:
+// a. It should contain alphabets and numbers
+// b. It should not start with a number
+// c. It must at least 6 characters long
+// If the password does not meet above requirements,
+// prompt the user to enter a valid password.
+// For character codes of a-z, A-Z & 0-9, refer to ASCII
+// table at the end of this document.
+
+
+
+
+
+
+
+
+
+
+// chapter# 26 - 30
+// 1. Write a program that takes a positive integer from user &
+// display the following in your browser.
+// a. number
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+
+// var input = +prompt("Enter a decimal number:")
+// document.write("Number: " + input)
+// document.write("</br>Round Off Value: " + Math.round(input) )
+// document.write("</br>Ceil Value: " + Math.ceil(input))
+// document.write("</br>Floor Value: " + Math.floor(input))
+
+// 2. Write a program that takes a negative floating point
+// number from user & display the following in your browser.
+// a. number
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+
+// var input = +prompt("Enter a decimal number:")
+// document.write("Number: " + input)
+// document.write("</br>Round Off Value: " + Math.round(input) )
+// document.write("</br>Ceil Value: " + Math.ceil(input))
+// document.write("</br>Floor Value: " + Math.floor(input))
+
+
+// 3. Write a program that displays the absolute value of a
+// number.
+// E.g. absolute value of -4 is 4 & absolute value of 5 is 5
+
+// var num = prompt("Enter a negative number:")
+// document.write("The Absolute value of "  + num + " is " + Math.abs(num))
+
+// 4. Write a program that simulates a dice using random()
+// method of JS Math class. Display the value of dice in your
+// browser.:
+
+// var dice1 = Math.random()
+// var improvedNum = (dice1 * 6) + 1;
+// var numberOfStars = Math.floor(improvedNum);
+// var dice2 = Math.random()
+// var improvedNum2 = (dice2 * 6) + 1;
+// var numberOfStars2 = Math.floor(improvedNum2);
+
+// document.write("Random dice value: " + numberOfStars )
+// document.write("</br>Random dice value: " + numberOfStars2 )
+
+// 5. Write a program that simulates a coin toss using random()
+// method of JS Math class. Display the value of coin in your
+// browser
+
+// var dice1 = Math.random()
+// var improvedNum = (dice1 * 2) + 1;
+// var numberOfStars = Math.floor(improvedNum);
+// document.write(numberOfStars)
+// if(numberOfStars == 1){
+//         alert('Hat')
+//     }else{
+//         alert('Tail')
+//     }
+
+// 6. Write a program that shows a random number between 1
+// and 100 in your browser.
+
+// var randomNumber = Math.random()
+// var improvedNum = (randomNumber * 100) + 1;
+// var numberOfStars = Math.floor(improvedNum);
+// document.write("Random Value Between 1 to 100 : " + numberOfStars)
+
+// 7. Write a program that asks the user about his weight. Parse
+// the user input and display his weight in your browser.
+// Possible user inputs can be:
+// a. 50
+// b. 50kgs
+// c. 50.2kgs
+// d. 50.2kilograms
+
+// var weight = prompt("Enter Your Weight:")
+// weight = parseFloat(weight)
+// document.write("The Weight of the user is: "+ weight + " kilograms" )
+
+// 8. Write a program that stores a random secret number from
+// 1 to 10 in a variable. Ask the user to input a number
+// between 1 and 10. If the user input equals the secret
+// number, congratulate the user.
+
+// var num = 8
+// var guessedNumber = prompt("Enter a number between 1 till 10")
+// if (num == guessedNumber) {
+//     alert("you guessed correct!!")
+
+// }else{
+//     alert("Try Again!!!!!!!")
+// }
+
+// 1. Write a program that displays current date and time in
+// your browser.
+// var a = new Date()
+// document.write(a)
+
+// Write a program that alerts the current month in words.
+// For example December.
+
+// var a = new Date()
+// var b = a.getMonth()
+// var months = ["January" , "Februaury" , "March" , "April ", "May" , "June" , "July","August", "September" , "October" , "November", "December"]
+// document.write("Current Month: " + months[b])
+
+// 3. Write a program that alerts the first 3 letters of the current
+// day, for example if today is Sunday then alert will show
+// Sun.
+
+// var a = new Date()
+// var day = a.getDay()
+// var days = ["Sun","Mon","Tue","wed","Thu" , "Fri","Sat"] 
+// document.write("Current Day: " + days[day])
+
+// 4. Write a program that displays a message “It’s Fun day” if
+// its Saturday or Sunday today.
+
+// var a = new Date()
+// var day = a.getDay()
+// var days = ["Sun","Mon","Tue","wed","Thu" , "Fri","Sat"] 
+// if (days[day]== "Sun" ||days[day]== "Sat" ) {
+//     alert("It's a fun day!!!!")
+// }
+
+// 5. Write a program that shows the message “First fifteen
+// days of the month” if the date is less than 16th of the month
+// else shows “Last days of the month”.
+
+// var a = new Date()
+// var date = a.getDate()
+// if (date <= 15) {
+//     alert("First Fifteen Days of the Month")
+
+// }else{
+//     alert("Last Fifteen Days of the month")
+// }
+
+// 6. Write a program that determines the minutes since
+// midnight, Jan. 1, 1970 and assigns it to a variable that
+// hasn't been declared beforehand. Use any variable you like
+// to represent the Date object.
+
+// var a = new Date()
+// document.write("Current Date: " , a)
+// var b = a.getTime()
+// document.write("</br>Elapsed millisecond since January 1, 1970: " + b)
+// document.write("</br>Elapsed minutes since January 1, 1970:  " + (b/1000/60))
+
+// 7. Write a program that tests whether it's before noon and
+// alert “Its AM” else “its PM”.
+// var a = new Date()
+// var b = a.getHours()
+// if (b>12) {
+//     alert("It's PM")
+
+// }else(
+//     alert("It's AM")
+// )
+// console.log(b)
+// 8. Write a program that creates a Date object for the last day
+// of the last month of 2020 and assigns it to variable named
+// laterDate.
+
+// var laterDate = new Date ("dec,31 2020")
+// document.write(laterDate)
+
+// 9. Create a date object of the starting date of this Ramadan
+// and alert the number of days past since 1st Ramadan?
+// Note: 1st Ramadan was on June 18, 2015
+
+// var date1 = new Date();
+// var date2 = new Date("04/14/2021");
+
+// // To calculate the time difference of two dates
+// var Difference_In_Time = date1.getTime() - date2.getTime();
+
+// // To calculate the no. of days between two dates
+// var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+
+// //To display the final no. of days (result)
+// document.write("Total number of days between dates  <br>"
+//                + date1 + "<br> and <br>"
+//                + date2 + " is: <br> "
+//                + Math.floor(Difference_In_Days));
+
+// 10. Write a program that displays in your browser the
+// seconds that elapsed between the reference date and the
+// beginning of 2015.
+
+// var date1 = new Date();
+// var date2 = new Date("01/01/2015");
+
+// // To calculate the time difference of two dates
+// var Difference_In_Time = date1.getTime() - date2.getTime();
+
+// //To display the final no. of days (result)
+// document.write("Total seconds between dates  <br>"
+//                + date1 + "<br> and <br>"
+//                + date2 + " is: <br> "
+//                + Math.floor(Difference_In_Time));
+
+// 11.Create a Date object for the current date and time.
+// Extract the hours, reset the date object an hour ahead and
+// finally display the date object in your browser. 
+
+// var dt = new Date();
+// document.write("Current date :" + dt )
+// dt.setHours( dt.getHours() - 1 );
+// document.write( "</br>1 hour ago, it was " +dt );
+
+
+// 12.write a program that creates a date object and show the
+// date in an alert box that is reset to 100 years back?
+
+// var dt = new Date();
+// document.write("Current date :" + dt )
+// dt.setFullYear( dt.getFullYear() - 100 );
+// document.write( "</br>100 years ago, it was " +dt );
+
+// 13.Write a program to ask the user about his age. Calculate
+// and show his birth year in your browser.
+
+// var a = +prompt("Enter you Age")
+// document.write("Your Age is : " + a)
+// var date = new Date()
+// var currentDate = date.getFullYear()
+// var birthYear = currentDate - a
+// document.write("</br> Your Birth Year is : " + birthYear)
+
+// 14. Write a program to generate your K-Electric bill in your
+// browser. All the amounts should be rounded off to 2
+// decimal places. Display the following fields:
+// a. Customer Name
+// b. Current Month
+// c. Number of units
+// d. Charges per unit
+// e. Net Amount Payable (within Due Date)
+// f. Late Payment Surcharge
+// g. Gross Amount Payable (after Due Date)
+
+// var Name =  prompt("Enter your Name: ")
+// var  Month=  prompt("Enter your Month: ")
+// var NoOfUnits =  prompt("Enter your No of Units: ")
+// var ChargesPerUnit =  prompt("Enter your Charges Per Unit: ")
+// var surcharges = 350
+// var netAmount = NoOfUnits*ChargesPerUnit
+// var GrossAmount = netAmount + surcharges
+// document.write("<h1>" + "K-ELECTRIC BILL" + "</h1>")
+// document.write("Customer Name : " + Name)
+// document.write("</br>Month : " + Month)
+// document.write("</br>No of Units : " + NoOfUnits)
+// document.write("</br>Charges Per Unit : " + ChargesPerUnit)
+// document.write("</br></br>Net Amount payable(within due date): "+ netAmount)
+// document.write("</br>Late Payment surcharges : " + surcharges)
+// document.write("</br></br>Gross Amount payable(after due date): "+ GrossAmount)
+
+// chapter#35-38
+// 1. Write a function that displays current date & time in your
+// browser.
+// function tellTime() {
+//      var now = new Date();
+//     document.write("Now: " + now);
+//     }
+// tellTime()
+
+// 2. Write a function that takes first & last name and then it
+// greets the user using his full name
+
+// var firstName = "Dua"
+// var lastName = "Jan Muhammed"
+// function fullName() {
+//     fullName = firstName.concat(lastName)
+//     alert("Welcome " + fullName)
+// }
+
+// fullName()
+
+// 3. Write a function that adds two numbers (input by user)
+// and returns the sum of two numbers.
+
+// var num1 = +prompt("Enter 1st number:")
+// var num2 = +prompt("Enter 2nd number:")
+// function sum() {
+//     return (num1 + num2)
+// }
+// document.write("The sum of both number is : " + sum())
+
+// 4. Calculator:
+// Write a function that takes three arguments num1, num2
+// & operator & compute the desired operation. Return and
+// show the desired result in your browser.
+// var num1 = +prompt("Enter 1st number: ")
+// var num2 = +prompt("Enter 2nd number: ")
+// var operator = prompt("Enter a Operator")
+
+// function calculator(num1, num2, operator) {
+//     if (operator == "+") {
+//         var c = num2 + num1
+//     } else if (operator == "-") {
+//         c = num1 - num2
+//     } else if (operator == "*") {
+//         c = num1 * num2
+//     } else if (operator == "/") {
+//         c = num1 / num2
+//     } else {
+//         alert("Enter a Correct Operator")
+//     }
+//     return c
+
+// }
+// document.write("</br>Number1 : " + num1) 
+// document.write("</br>Number2 : " + num2) 
+// document.write("</br>operator : " + operator) 
+
+// document.write("</br>Answer : " + calculator(num1, num2, operator)) 
+
+// 5. Write a function that squares its argument.
+// a = +prompt("Enter a number")
+// function square(a) {
+//     return a*a  
+// }
+// document.write(square(a))
+
+// 6. Write a function that computes factorial of a number.
+// function factorial(n){
+//     //base case
+//     if(n == 0 || n == 1){
+//         return 1;
+//     //recursive case
+//     }else{
+//         return n * factorial(n-1);
+//     }
+// }
+// var n = +prompt("Enter a number")
+// answer = factorial(n)
+// document.write("The factorial of " + n + " is " + answer);
+
+// 7. Write a function that take start and end number as inputs
+// & display counting in your browser.
+
+// var a = +prompt("Enter a Starting Point:")
+// var b = +prompt("Enter a Ending Point:")
+// function counting() {
+//     for (let i = a; i < b+1; i++) {
+//         document.write("</br>"+i)
+
+//     }
+// }
+// counting();
+    
+// Write a nested function that computes hypotenuse of a
+// right angle triangle.
+// Hypotenuse2 = Base2 + Perpendicular2
+// Take base and perpendicular as inputs.
+// Outer function : calculateHypotenuse()
+// Inner function: calculateSquare()
+
+// var a = +prompt("Enter Base: ")
+// var b = +prompt("Enter perpendicular: ")
+
+// function hypotenuse(a, b) {
+//     function square(c) { return c*c; }
+//     return Math.sqrt(square(a) + square(b));
+//  }
+//  function secondFunction() {
+//     var result = hypotenuse(a,b)
+//     document.write ( result )
+//  }
+//  secondFunction()
+
+// 9. Write a function that calculates the area of a rectangle.
+//  A = width * height
+//  Pass width and height in following manner:
+// i. Arguments as value
+// ii. Arguments as variables
+
+// function area(a,b) {
+//     return a*b
+    
+// }
+// var c = 3
+// var d = 4
+// document.write("Area : "+area(c,d))
+// document.write("</br> Area : "+area(8,9))
+
+// 10. Write a JavaScript function that checks whether a passed
+// string is palindrome or not?
+// function checkPalindrome(string) {
+//     var arrayValues = string.split('');
+//     var reverseArrayValues = arrayValues.reverse();
+//     var reverseString = reverseArrayValues.join('');
+    
+//     if(string.toLowerCase() == reverseString.toLowerCase()) {
+//         console.log('It is a palindrome');
+//     }
+//     else {
+//         console.log('It is not a palindrome');
+//     }
+// }
+
+// checkPalindrome("Madam")
+// checkPalindrome("sir")
+
+// 11. Write a JavaScript function that accepts a string as a
+// parameter and converts the first letter of each word of the
+// string in upper case.
+// EXAMPLE STRING : 'the quick brown fox'
+// EXPECTED OUTPUT : 'The Quick Brown Fox'
+
+// function upperCase(string) {
+//     return string.toUpperCase()
+// }
+// console.log(upperCase("dua"))
+
+// 12. Write a JavaScript function that accepts a string as a
+// parameter and find the longest word within the string.
+// EXAMPLE STRING : 'Web Development Tutorial'
+// EXPECTED OUTPUT : 'Development'
+
+function longestString() {
+    var String = "Web Development classes"
+}
     
